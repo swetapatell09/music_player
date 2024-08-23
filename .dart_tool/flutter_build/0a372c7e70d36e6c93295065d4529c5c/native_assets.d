@@ -1,0 +1,1 @@
+ /Users/r88/Documents/flutter_project/music_player_app/.dart_tool/flutter_build/0a372c7e70d36e6c93295065d4529c5c/native_assets.yaml: 
