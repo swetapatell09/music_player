@@ -90,9 +90,12 @@ class _DetailScreenState extends State<DetailScreen> {
                               angle: (pi * 2) / 2,
                               child: IconButton(
                                 onPressed: () {
+                                  controller.assetsAudioPlayer.pause();
+                                  controller.changeButton(false);
                                   controller.assetsAudioPlayer.previous();
-                                  controller.previousOrNext(
-                                      controller.index.value - 1);
+                                  controller.changeButton(true);
+                                   controller.previousOrNext(
+                                       controller.index.value - 1);
 
                                 },
                                 icon: const Icon(Icons.double_arrow),
@@ -114,7 +117,10 @@ class _DetailScreenState extends State<DetailScreen> {
                               color: Colors.white),
                           IconButton(
                               onPressed: () {
+                                controller.assetsAudioPlayer.pause();
+                                controller.changeButton(false);
                                 controller.assetsAudioPlayer.next();
+                                controller.changeButton(true);
                                 controller
                                     .previousOrNext(controller.index.value + 1);
 
