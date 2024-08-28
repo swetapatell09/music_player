@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       size: 30,
                       color: Colors.white,
                     ),
-                  )
+                  ),
                 ],
               ),
               const SizedBox(
@@ -87,6 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 20,
               ),
+
               CarouselSlider(
                 items: [
                   Padding(
@@ -116,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Image.asset("assets/image/weather3.png",
                           height: 400, width: 400, fit: BoxFit.cover),
                     ),
-                  )
+                  ),
                 ],
                 options: CarouselOptions(
                   height: 200,
@@ -127,28 +128,30 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               Expanded(
-                child: GridView.builder(
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2),
-                    itemCount: controller.l2.length,
-                    itemBuilder: (context, index) => InkWell(
-                          onTap: () {
-                            Get.toNamed('detail',
-                                arguments: controller.l2[index]);
-                            controller.changeIndex(index);
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(5),
-                            child: Container(
-                                width: 200,
-                                height: 200,
-                                child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(20),
-                                    child: Image.network(
-                                        controller.l2[index].data.image))),
+                child: Obx(()=>GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2),
+                      itemCount: controller.l2.length,
+                      itemBuilder: (context, index) => InkWell(
+                            onTap: () {
+                              Get.toNamed('detail',
+                                  arguments: controller.l2[index]);
+                              controller.changeIndex(index);
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.all(5),
+                              child: Container(
+                                  width: 200,
+                                  height: 200,
+                                  child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(20),
+                                      child: Image.network(
+                                          controller.l2[index].data.image))),
+                            ),
                           ),
-                        )),
+                ),
+                ),
               ),
             ],
           ),

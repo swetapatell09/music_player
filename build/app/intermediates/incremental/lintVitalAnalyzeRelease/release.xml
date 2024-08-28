@@ -1,0 +1,40 @@
+<variant
+    name="release"
+    package="com.example.music_player_app"
+    minSdkVersion="21"
+    targetSdkVersion="34"
+    shrinking="true"
+    mergedManifest="/Users/r88/Documents/flutter_project/music_player_app/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    proguardFiles="/Users/r88/Documents/flutter_project/music_player_app/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.1:/Users/r88/Softwer/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/r88/Documents/flutter_project/music_player_app/build/app/intermediates/lint_vital_partial_results/release/out"
+    desugaredMethodsFiles="/Users/r88/.gradle/caches/transforms-3/302ddec879da020e4b37ed3eda5092f8/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifest="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin"
+        resDirectories="src/main/res"
+        assetsDirectories="src/main/assets"/>
+    <sourceProvider
+        manifest="src/release/AndroidManifest.xml"
+        javaDirectories="src/release/java:src/release/kotlin"
+        resDirectories="src/release/res"
+        assetsDirectories="src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="/Users/r88/Documents/flutter_project/music_player_app/build/app/intermediates/javac/release/classes:/Users/r88/Documents/flutter_project/music_player_app/build/app/tmp/kotlin-classes/release:/Users/r88/Documents/flutter_project/music_player_app/build/app/kotlinToolingMetadata:/Users/r88/Documents/flutter_project/music_player_app/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      applicationId="com.example.music_player_app"
+      generatedSourceFolders="/Users/r88/Documents/flutter_project/music_player_app/build/app/generated/ap_generated_sources/release/out:/Users/r88/Documents/flutter_project/music_player_app/build/app/generated/aidl_source_output_dir/release/out:/Users/r88/Documents/flutter_project/music_player_app/build/app/generated/source/buildConfig/release:/Users/r88/Documents/flutter_project/music_player_app/build/app/generated/renderscript_source_output_dir/release/out"
+      generatedResourceFolders="/Users/r88/Documents/flutter_project/music_player_app/build/app/generated/res/rs/release:/Users/r88/Documents/flutter_project/music_player_app/build/app/generated/res/resValues/release">
+  </mainArtifact>
+</variant>

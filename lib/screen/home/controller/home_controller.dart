@@ -5,7 +5,7 @@ import '../../../utils/api_helper.dart';
 import '../model/home_model.dart';
 
 class HomeController extends GetxController {
-  Duration totalDuration = Duration(seconds: 0);
+  Duration totalDuration =  const Duration(seconds: 0);
   AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
   RxInt index = 0.obs;
   RxList<Song> l2 = <Song>[].obs;
